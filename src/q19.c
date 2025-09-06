@@ -3,3 +3,21 @@ Example: User’s Input = 2, then pattern to print will be:
     * *
     * *
 */
+#include <stdio.h>
+
+int main() {
+    int pint;
+    scanf("%d", &pint);
+    int x, y;
+
+    for (int x = 0; x < pint; x++) {
+        for (int y = 0; y < pint; y++) {
+            printf("*");
+            if (y < pint - 1) {
+                printf(" ");
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
