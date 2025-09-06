@@ -1,34 +1,34 @@
+// Write a C program that prompts the user for a number between 1 and 7 and prints the corresponding day of the week using a switch-case statement.
 #include <stdio.h>
-int main() {
-    int day;
-
-    printf("Enter a number (1-7): ");
-    scanf("%d", &day);
-    switch(day) {
-        case 1:
-            printf("Monday");
-            break;
-        case 2:
-            printf("Tuesday");
-            break;
-        case 3:
-            printf("Wednesday");
-            break;
-        case 4:
-            printf("Thursday");
-            break;
-        case 5:
-            printf("Friday");
-            break;
-        case 6:
-            printf("Saturday");
-            break;
-        case 7:
-            printf("Sunday");
-            break;
-        default:
-            printf("Invalid input! Please enter a number between 1 and 7.");
-            return 1;
+int main()
+{
+    int n;
+    printf("enter a number: ");
+    scanf("%d", &n);
+    switch (n)
+    {
+    case 1:
+        printf("sunday");
+        break;
+    case 2:
+        printf("monday");
+        break;
+    case 3:
+        printf("tuesday");
+        break;
+    case 4:
+        printf("wednesday");
+        break;
+    case 5:
+        printf("thursday");
+        break;
+    case 6:
+        printf("friday");
+        break;
+    case 7:
+        printf("saturday");
+        break;
+    default:
+        printf("invalid");
     }
-    return 0;
 }
