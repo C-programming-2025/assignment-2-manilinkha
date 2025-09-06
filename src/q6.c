@@ -2,7 +2,7 @@
 int main()
 {
     int tab, n, i;
-    printf("enter a number: ");
+    printf("Enter a number:");
     scanf("%d", &n);
     i = 1;
     do
