@@ -1,16 +1,16 @@
 #include <stdio.h>
-int main(){
+int main() {
     int num, ab_value;
     printf("Enter a number:");
-    scanf("%d",&num);
-    if (num>0)
-    {
-        ab_value = num; 
+    scanf("%d", &num);
+
+    if (num > 0) {
+        ab_value = num;
+    } else if (num < 0) {
+        ab_value = -num;
+    } else {
+        ab_value = 0; 
     }
-    else if (num<0)
-    {
-        ab_value = -num; 
-    } 
-        printf("The absolute value is: %d",ab_value);
-        return 0;
-    }
+    printf("The absolute value is: %d", ab_value);
+    return 0;
+}
