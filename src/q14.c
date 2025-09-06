@@ -1,24 +1,14 @@
 // Write a C program that prompts the user for a positive integer and prints all the factors of that number using a for loop.
 #include <stdio.h>
-int main()
-{
-    int num;
-    printf("Enter a positive integer: ");
-    scanf("%d", &num);
 
-    if (num <= 0)
-    {
-        printf("Please enter a positive integer.\n");
-        return 1;
-    }
-
-    for (int i = 1; i <= num; i++)
-    {
-        if (num % i == 0)
-        {
-            printf("%d ", i);
+int main() {
+    int p;
+    int r = 1;
+    scanf("%d", &p);
+    for (int r = 1; r <= p; r++) {
+        if (p % r == 0) {
+            printf("%d ", r);
         }
     }
-    printf("\n");
     return 0;
 }
