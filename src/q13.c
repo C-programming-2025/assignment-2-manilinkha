@@ -1,14 +1,12 @@
 #include <stdio.h>
 int main() {
-    int i = 1;
-    int sum = 0; 
-    while (i <= 50) {
-        if (i % 2 == 0) { 
-            sum += i; 
-        }
-        i++; 
+    int number = 2;  
+    int sum = 0;
+    printf("Calculating sum of even numbers from 1 to 50...\n");
+    while (number <= 50) {
+        sum += number;  
+        number += 2;    
     }
-    printf("Sum of even numbers from 1 to 50: %d\n", sum);
-    
+    printf("Sum of even numbers from 1 to 50 is: %d\n", sum);
     return 0;
 }

@@ -1,11 +1,11 @@
 #include <stdio.h>
-int main()
-{
-    int n, i = 1;
-    scanf("%d", &n);
-    do
-    {
-        printf("%d * %d = %d\n", n, i, n * i);
+int main() {
+    int number, i = 1;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    printf("\nMultiplication table of %d:\n", number);
+    do {
+        printf("%d x %d = %d\n", number, i, number * i);
         i++;
     } while (i <= 10);
     return 0;

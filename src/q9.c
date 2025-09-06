@@ -1,14 +1,15 @@
 #include <stdio.h>
 int main() {
-    int i, j, k;
-    for (i = 5; i >= 1; i--) {
-        for (k = 1; k <= 5 - i; k++) {
-            printf(" ");
-        }
-        for (j = 1; j <= i; j++) {
+    int n = 5; 
+    int i = n;
+    while(i >= 1) {
+        int j = 1;
+        while(j <= i) {
             printf("*");
+            j++;
         }
         printf("\n");
+        i--;
     }
     return 0;
 }
