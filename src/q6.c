@@ -2,7 +2,7 @@
 int main()
 {
     int tab, n, i;
-    printf("Enter a number:");
+    printf("Enter a number: ");   
     scanf("%d", &n);
     i = 1;
     do
@@ -11,4 +11,5 @@ int main()
         printf("%d * %d = %d\n", n, i, tab);
         i++;
     } while (i <= 10);
+    return 0;
 }
