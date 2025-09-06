@@ -1,14 +1,13 @@
 #include <stdio.h>
 int main()
 {
-    int tab, n, i;
-    printf("Enter a number: ");   
+    int n, i = 1;
     scanf("%d", &n);
-    i = 1;
     do
     {
-        tab = n * i;
-        printf("%d * %d = %d\n", n, i, tab);
+        printf("%d * %d = %d", n, i, n * i);
+        if (i < 10)  
+            printf("\n");
         i++;
     } while (i <= 10);
     return 0;
