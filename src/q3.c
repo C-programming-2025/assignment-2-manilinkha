@@ -1,3 +1,4 @@
+// Write a C program that calculates the absolute value of a given number without using the built-in absolute value function.
 #include <stdio.h>
 int main() {
     int num, ab_value;

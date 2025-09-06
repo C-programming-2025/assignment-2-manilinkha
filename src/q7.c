@@ -1,3 +1,14 @@
+/* Write a C program that prints a pattern of asterisks.
+ *
+ **
+ ***
+ ****
+ *****
+ ****
+ ***
+ **
+ *
+ */
 #include <stdio.h>
 int main() {
     int n = 5;
