@@ -5,30 +5,19 @@ Example: User’s Input = 2, then pattern to print will be:
 */
 #include <stdio.h>
 
-int main()
-{
-    int n;
-    printf("Enter a positive integer: ");
-    scanf("%d", &n);
+int main() {
+    int pint;
+    scanf("%d", &pint);
+    int x, y;
 
-    if (n <= 0)
-    {
-        printf("Please enter a positive integer.\n");
-        return 1;
-    }
-
-    for (int i = 0; i < n; i++)
-    { // rows
-        for (int j = 0; j < n; j++)
-        { // columns
+    for (int x = 0; x < pint; x++) {
+        for (int y = 0; y < pint; y++) {
             printf("*");
-            if (j != n - 1)
-            { // add space except after last *
+            if (y < pint - 1) {
                 printf(" ");
             }
         }
         printf("\n");
     }
-
     return 0;
 }
